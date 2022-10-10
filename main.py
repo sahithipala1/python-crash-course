@@ -86,4 +86,103 @@ print(friends_foods.append("Ice cream"))
 
 print(friends_foods)
 
+# Slices: Using one of the programs you wrote in this chapter, add several lines to the end of the program that do
+# the following: Print the message The first three items in the list are:.
+# Then use a slice to print the first three items from that program’s list.
+# Print the message Three items from the middle of the list are:.
+# Use a slice to print three items from the middle of the list.
+# Print the message The last three items in the list are:. Use a slice to print the last three items in the list.
 
+
+places = ["chicago", "put-in-bay", "New York", "stow", "Traverse city", "Columbus", "Ohio", "Cleveland", "Hudson"]
+
+print(places[:3])
+
+print(places[3:6])
+
+print(places[-3:])
+
+# ********* Tuples ***************
+
+dimensions = (200, 50)
+print("\nOriginal dimensions:")
+for dimension in dimensions:
+    print(dimension)
+
+dimensions = (600, 500)
+print("\nModified dimensions:")
+for dimension in dimensions:
+    print(dimension)
+
+#  4-13. Buffet: A buffet-style restaurant offers only five basic foods.
+#  Think of five simple foods, and store them in a tuple.
+#  Use a for loop to print each food the restaurant offers.
+#  Try to modify one of the items, and make sure that Python rejects the change.
+#  The restaurant changes its menu, replacing two of the items with different foods.
+#  Add a line that rewrites the tuple, and then use a for loop to print each of the items on the revised menu.
+
+
+buffet = ("Biryani", "Raitha", "Dal", "Rice", "Paneer")
+print("\nOriginal Items:")
+for items in buffet:
+    print(items)
+
+buffet = ("Biryani", "Raitha", "Dal", "curry", "kheer")
+print("\nModified Items:")
+
+for items in buffet:
+    print(items)
+
+# if loop
+
+cars = ["audi", "bmw", "subaru", "toyota"]
+
+for car in cars:
+    if car == "bmw":
+        print(car.upper())
+    else:
+        print(car.title())
+
+requested_topping = 'mushrooms'
+if requested_topping != 'anchovies':
+    print("Hold the anchovies!")
+
+else:
+    print("True")
+
+banned_users = ["camila", "samantha", "queen"]
+users = ["marie", "rosy", "lilly"]
+
+if users not in banned_users:
+    print(f"{users}, you can post a response.")
+
+# Boolean
+
+car = 'subaru'
+print("Is car == 'subaru'? I predict True.")
+print(car == 'subaru')
+print("\nIs car == 'audi'? I predict False.")
+print(car == 'audi')
+print(car == "BMW")
+
+# Simple if statements:
+age = 22
+if age >= 21:
+    print("ITS your birthday")
+
+age = 12
+if age < 4:
+    print("Your admission cost is $0.")
+elif age < 18:
+    print("Your admission cost is $25.")
+else:
+    print("Your admission cost is $40.")
+
+age = 45
+if age < 4:
+    price = 0
+elif age < 18:
+    price = 25
+else:
+    price = 40
+print(f"Your admission cost is ${price}.")
