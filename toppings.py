@@ -87,3 +87,52 @@ for alien in aliens[:5]:
     print("...")
 # Show how many aliens have been created.
 print(f"Total number of aliens: {len(aliens)}")
+
+
+message = input("Tell me something, and I will repeat it back to you: ")
+print(message)
+
+name = input("Please enter your name: ")
+print(f"\nHello, {name}!")
+
+team = input("Please enter your team name: ")
+print(f"\nHello ,{team}")
+
+
+prompt = "If you tell us who you are, we can personalize the messages you see."
+prompt += "\nWhat is your first name? "
+name = input(prompt)
+print(f"\nHello, {name}!")
+
+
+# If loop
+
+height = input("How tall are you, in inches? ")
+height = int(height)
+if height >= 48:
+    print("\nYou're tall enough to ride!")
+else:
+    print("\nYou'll be able to ride when you're a little older.")
+    
+weight = input("what is your weight ? :")
+
+weight = int(weight)
+
+if weight >= 170:
+    print("your are overweight. please plan for diet")
+else:
+    print("You have a normal weight")
+
+
+# When you use numerical input to do calculations
+# and comparisons, be sure to convert the input value to a numerical representation first.
+
+# Restaurant seating
+
+seat = input("how many people are in dinner group: ")
+seat = int(seat)
+if seat >= 8:
+    print("You have to wait for 20minutes")
+else:
+    print("your table is ready")
+    
